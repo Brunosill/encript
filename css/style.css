@@ -1,0 +1,10 @@
+body{
+    background: url("img/bg.jpg");
+}
+
+.container-lg{
+    margin-top: 150px;
+}
+.form-control{
+    border: 0;
+}
