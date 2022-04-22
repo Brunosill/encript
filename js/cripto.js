@@ -1,7 +1,11 @@
 var textInput = document.querySelector("#textInput");
 var textOutput = document.querySelector("#textOutput");
+console.log(textOutput)
+
+var buttom = botaoCopia();
 function criptografa(){
 
+    console.log(textOutput);
     let text = textInput.value;
     let textSaida = text.replace(/e/g, 'enter')
     .replace(/i/g, "imes")
@@ -11,8 +15,9 @@ function criptografa(){
 
     console.log(textSaida);
     textOutput.textContent = textSaida;
-
 };
+
+
 
 function descriptografa(){
     
@@ -27,9 +32,11 @@ function descriptografa(){
     textOutput.textContent= textSaida;
 };
 
+
 var botaoCriptografa = document.querySelector("#botaoCriptografar");
 
 var botaoDescriptografa = document.querySelector("#botaoDescriptografar");
 
 botaoCriptografa.addEventListener("click", criptografa);
 botaoDescriptografa.addEventListener("click", descriptografa);
+

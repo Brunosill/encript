@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Encript</title>
@@ -12,37 +12,36 @@
     </head>
     <body class="bg-dark">
        
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-md-7 col-lg-8">
-                    <div class="container-lg row g-3">
-                        <div class="mb-3">
-                            <textarea id="textInput" class="form-control " style="height: 624px"  placeholder="Digite seu textos"></textarea>
+        <section class="section container">
+            <div class="columns">
+                <div class="column is-8 is-full">
+                    <div class="bd-notification is-info">
+                        <textarea class="is-full textarea" id="textInput"  style="height: 624px"  placeholder="Digite seu textos"></textarea>
+                        <div class="container columns control">
+                            <button id="botaoCriptografar" class="column is-5 button" type="button">
+                                <p>Criptografar</p>
+                            </button>
+                            <div class="column chave"></div>
+                            <button id="botaoDescriptografar" type="button" class="column is-5 button control">
+                                <p>Descriptografar</p>
+                            </button>
                         </div>
-                    </div>
-                    <div class=" g-3">
-                        <button id="botaoCriptografar" class="btn btn-primary btn-lg col-sm-4">
-                            <p>Criptografar</p>
-                        </button>
-                        
-                        <button id="botaoDescriptografar" type="button" class="btn btn-secondary btn-lg col-sm-4">
-                            <p>Descriptografar</p>
-                        </button>
                     </div>
                     
                 </div>
-                <div class="container-lg col-md-5 col-lg-3 " >
-                    <div id="textOutput" class="form-control row-cols-2" >
-                        
-                    </div>
+                <div class="column is-4" >
+                    <div id="textOutput" class="box textarea"></div>
                 
                 </div>
             </div>
-        </div>
-        <footer class="my-5 pt-5 text-muted text-center">
-            <p class="mb-2">&copy: Copytight Bruno Guedes - 2022</p>
-        </footer>
-        <script  type="text/javascript" src="js/cripto.js"></script>
+        </section>
+        <script  src="js/copie.js"></script>
+        <script src="js/cripto.js"></script>
     </body>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            Site by <a href="https://www.linkedin.com/in/bruno-guedes-da-silva-9267091b6"> Bruno Guedes</a>
+        </div>
+    </footer>
     
 </html>

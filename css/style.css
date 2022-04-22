@@ -2,9 +2,17 @@ body{
     background: url("img/bg.jpg");
 }
 
-.container-lg{
-    margin-top: 150px;
+.columns{
+    margin-top: 50px;
 }
 .form-control{
     border: 0;
+}
+
+.botao-Copia{
+    align-self: center;
+}
+.footer{
+    background-color: black;
+
 }
