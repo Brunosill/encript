@@ -1,20 +1,22 @@
-var textDescriptado = document.querySelector("#textInput");
-var textEncriptado = document.querySelector("#textOutput");
+var textInput = document.querySelector("#textInput");
+var textOutput = document.querySelector("#textOutput");
 function criptografa(){
 
-    let text = textDescriptado.value;
+    let text = textInput.value;
     let textSaida = text.replace(/e/g, 'enter')
     .replace(/i/g, "imes")
     .replace(/a/g, "ai")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
 
-    textEncriptado.value = textSaida;
+    console.log(textSaida);
+    textOutput.textContent = textSaida;
+
 };
 
 function descriptografa(){
     
-    let text = textEncriptado.value;
+    let text = textInput.value;
     let textSaida = text.replace(/enter/g, 'e')
     .replace(/imes/g, "i")
     .replace(/ai/g, "a")
@@ -22,7 +24,7 @@ function descriptografa(){
     .replace(/ufat/g, "u");
     
 
-    textDescriptado.value = textSaida;
+    textOutput.textContent= textSaida;
 };
 
 var botaoCriptografa = document.querySelector("#botaoCriptografar");
