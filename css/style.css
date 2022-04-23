@@ -1,7 +1,10 @@
 body{
-    background: url("img/bg.jpg");
+    background: url("/img/bg.jpg");
 }
-
+buttom{
+    text-align: start;
+    border-radius: 48px;
+}
 .columns{
     margin-top: 50px;
 }
@@ -14,5 +17,6 @@ body{
 }
 .footer{
     background-color: black;
+    color: white;
 
 }

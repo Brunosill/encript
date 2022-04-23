@@ -1,11 +1,9 @@
 var textInput = document.querySelector("#textInput");
 var textOutput = document.querySelector("#textOutput");
-console.log(textOutput)
 
-var buttom = botaoCopia();
+
+
 function criptografa(){
-
-    console.log(textOutput);
     let text = textInput.value;
     let textSaida = text.replace(/e/g, 'enter')
     .replace(/i/g, "imes")
@@ -13,10 +11,12 @@ function criptografa(){
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
 
-    console.log(textSaida);
-    textOutput.textContent = textSaida;
-};
+    var p = document.createElement("p");
+    textOutput.appendChild(p);
+    p.textContent = textSaida;
 
+};
+console.log(textOutput)
 
 
 function descriptografa(){
@@ -29,7 +29,9 @@ function descriptografa(){
     .replace(/ufat/g, "u");
     
 
-    textOutput.textContent= textSaida;
+    var p = document.createElement("p");
+    textOutput.appendChild(p);
+    p.textContent = textSaida;
 };
 
 

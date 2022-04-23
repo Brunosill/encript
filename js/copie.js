@@ -7,4 +7,6 @@ function botaoCopia(){
     buttom.appendChild(p);
     buttom.classList.add("buttom");
     buttom.classList.add("botao-copia");
+    buttom.addEventListener()
+    return buttom;
 }
