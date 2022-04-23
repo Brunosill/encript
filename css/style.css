@@ -1,5 +1,6 @@
 body{
-    background: url("/img/bg.jpg");
+    background: url("../img/bg.jpg");
+
 }
 buttom{
     text-align: start;
@@ -18,5 +19,4 @@ buttom{
 .footer{
     background-color: black;
     color: white;
-
 }
