@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Encript</title>
+        
+        
+    </head>
+    <body class="bg-dark">
+       
+        <section class="section container">
+            <div class="columns">
+                <div class="column is-8 is-full">
+                    <div class="bd-notification is-info">
+                        <textarea class="is-full textarea" id="textInput"  style="height: 624px"  placeholder="Digite seu textos"></textarea>
+                        <div class="container columns control">
+                            <button id="botaoCriptografar" class="column is-5 buttom" type="button">
+                                <p>Criptografar</p>
+                            </button>
+                            <div class="column chave"></div>
+                            <button id="botaoDescriptografar" type="button" class="column is-5 buttom">
+                                <p>Descriptografar</p>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="column is-4 colunaOutput" >
+                    <div id="textOutput" class="box textarea"></div>
+                
+                </div>
+            </div>
+        </section>
+        <script  src="js/copie.js"></script>
+        <script src="js/cripto.js"></script>
+    </body>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            Site by <a href="https://www.linkedin.com/in/bruno-guedes-da-silva-9267091b6"> Bruno Guedes</a>
+        </div>
+    </footer>
+    
+</html>
