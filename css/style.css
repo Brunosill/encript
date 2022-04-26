@@ -2,6 +2,10 @@ body{
     background: url("../img/bg.jpg");
 
 }
+.aviso {
+    margin-top: 15px;
+    color: white;
+}
 buttom{
     text-align: start;
     border-radius: 48px;
@@ -19,4 +23,5 @@ buttom{
 .footer{
     background-color: black;
     color: white;
+    font-size: 24px;
 }
